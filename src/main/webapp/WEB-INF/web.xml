@@ -7,25 +7,25 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         version="2.5">
 
 
-    <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>pl.sda.hello.world.HelloServlet</servlet-class>
-        <init-param>
-            <param-name>userId</param-name>
-            <param-value>123456</param-value>
-        </init-param>
-        <init-param>
-            <param-name>localization</param-name>
-            <param-value>Poland</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>HelloServlet</servlet-name>-->
+        <!--<servlet-class>pl.sda.hello.world.HelloServlet</servlet-class>-->
+        <!--<init-param>-->
+            <!--<param-name>userId</param-name>-->
+            <!--<param-value>123456</param-value>-->
+        <!--</init-param>-->
+        <!--<init-param>-->
+            <!--<param-name>localization</param-name>-->
+            <!--<param-value>Poland</param-value>-->
+        <!--</init-param>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
 
 
-    <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
-        <url-pattern>/Hello</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>HelloServlet</servlet-name>-->
+        <!--<url-pattern>/hello</url-pattern>-->
+        <!--<url-pattern>/Hello</url-pattern>-->
+    <!--</servlet-mapping>-->
 
 </web-app>
