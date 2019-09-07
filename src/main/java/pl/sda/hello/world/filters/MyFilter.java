@@ -2,9 +2,14 @@ package pl.sda.hello.world.filters;
 
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebFilter(
+        filterName="MyFilter",
+        servletNames = {"HelloServlet"}
+)
 public class MyFilter implements Filter {
     @Override
     public void doFilter(
