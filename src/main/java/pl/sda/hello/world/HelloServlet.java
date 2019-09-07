@@ -39,6 +39,7 @@ public class HelloServlet extends HttpServlet {
         writer.println("Localization: " + localization);
         // response.sendRedirect("index.jsp");
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
-        requestDispatcher.forward(request, response);
+        // requestDispatcher.forward(request, response);
+        requestDispatcher.include(request, response);
     }
 }
