@@ -35,5 +35,6 @@ public class HelloServlet extends HttpServlet {
         writer.println("Hello world!");
         writer.println("<strong>UserId</strong>: " + userId);
         writer.println("Localization: " + localization);
+        response.sendRedirect("index.jsp");
     }
 }
