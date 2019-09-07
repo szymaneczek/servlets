@@ -15,7 +15,7 @@ public class MyFilter implements Filter {
         PrintWriter writer = servletResponse.getWriter();
         writer.write("<html><body><div id=\"servletResponse\" style='text-align: center;' ");
         String login = servletRequest.getParameter("login");
-        if (login.equals("admin")) {
+        if (login != null && login.equals("admin")) {
             filterChain.doFilter(servletRequest, servletResponse);
         } else {
             writer.print(
